@@ -1,0 +1,154 @@
+{
+  "@context" : {
+    "EBikeCharger" : {
+      "@id" : "http://w3id.org/def/ekaw2018#EBikeCharger"
+    },
+    "OccupancySensor" : {
+      "@id" : "http://w3id.org/def/ekaw2018#OccupancySensor"
+    },
+    "Battery" : {
+      "@id" : "http://w3id.org/def/ekaw2018#Battery"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "PressureMat" : {
+      "@id" : "http://w3id.org/def/ekaw2018#PressureMat"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "MotionSensor" : {
+      "@id" : "http://w3id.org/def/ekaw2018#MotionSensor"
+    },
+    "ElectricVehicle" : {
+      "@id" : "http://w3id.org/def/ekaw2018#ElectricVehicle"
+    },
+    "WaterFlowMeter" : {
+      "@id" : "http://w3id.org/def/ekaw2018#WaterFlowMeter"
+    },
+    "WaterEnergyMeter" : {
+      "@id" : "http://w3id.org/def/ekaw2018#WaterEnergyMeter"
+    },
+    "PanicButton" : {
+      "@id" : "http://w3id.org/def/ekaw2018#PanicButton"
+    },
+    "PeopleCounter" : {
+      "@id" : "http://w3id.org/def/ekaw2018#PeopleCounter"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "CO2Sensor" : {
+      "@id" : "http://w3id.org/def/ekaw2018#CO2Sensor"
+    },
+    "Thermometer" : {
+      "@id" : "http://w3id.org/def/ekaw2018#Thermometer"
+    },
+    "SmartRefrigerator" : {
+      "@id" : "http://w3id.org/def/ekaw2018#SmartRefrigerator"
+    },
+    "Charger" : {
+      "@id" : "http://w3id.org/def/ekaw2018#Charger"
+    },
+    "BeaconReader" : {
+      "@id" : "http://w3id.org/def/ekaw2018#BeaconReader"
+    },
+    "PowerMeter" : {
+      "@id" : "http://w3id.org/def/ekaw2018#PowerMeter"
+    },
+    "Thermostat" : {
+      "@id" : "http://w3id.org/def/ekaw2018#Thermostat"
+    },
+    "BatteryStorageUnit" : {
+      "@id" : "http://w3id.org/def/ekaw2018#BatteryStorageUnit"
+    },
+    "ActivityTracker" : {
+      "@id" : "http://w3id.org/def/ekaw2018#ActivityTracker"
+    },
+    "BloodPressureMonitor" : {
+      "@id" : "http://w3id.org/def/ekaw2018#BloodPressureMonitor"
+    },
+    "WindowSensor" : {
+      "@id" : "http://w3id.org/def/ekaw2018#WindowSensor"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/elements/1.1/source"
+    },
+    "IndoorClimateQualitySensor" : {
+      "@id" : "http://w3id.org/def/ekaw2018#IndoorClimateQualitySensor"
+    },
+    "LightSwitch" : {
+      "@id" : "http://w3id.org/def/ekaw2018#LightSwitch"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "DoorSensor" : {
+      "@id" : "http://w3id.org/def/ekaw2018#DoorSensor"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "NoiseSensor" : {
+      "@id" : "http://w3id.org/def/ekaw2018#NoiseSensor"
+    },
+    "PhotovoltaicPanel" : {
+      "@id" : "http://w3id.org/def/ekaw2018#PhotovoltaicPanel"
+    },
+    "Actuator" : {
+      "@id" : "http://www.w3.org/ns/sosa/Actuator"
+    },
+    "WeightScale" : {
+      "@id" : "http://w3id.org/def/ekaw2018#WeightScale"
+    },
+    "cardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#cardinality"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "HumiditySensor" : {
+      "@id" : "http://w3id.org/def/ekaw2018#HumiditySensor"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "LuminanceMeter" : {
+      "@id" : "http://w3id.org/def/ekaw2018#LuminanceMeter"
+    },
+    "Device" : {
+      "@id" : "http://w3id.org/def/ekaw2018#Device"
+    },
+    "EVCharger" : {
+      "@id" : "http://w3id.org/def/ekaw2018#EVCharger"
+    },
+    "Lightbulb" : {
+      "@id" : "http://w3id.org/def/ekaw2018#Lightbulb"
+    },
+    "HVACSensor" : {
+      "@id" : "http://w3id.org/def/ekaw2018#HVACSensor"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "SmartOven" : {
+      "@id" : "http://w3id.org/def/ekaw2018#SmartOven"
+    },
+    "Sensor" : {
+      "@id" : "http://www.w3.org/ns/sosa/Sensor"
+    }
+  }
+}

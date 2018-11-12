@@ -1,0 +1,1299 @@
+[ {
+  "@id" : "_:genid1",
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/publisher" : [ {
+    "@id" : "http://www.oeg-upm.net/"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "EKAW2018 tutorial example"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://purl.org/NET/rdflicense/cc-by4.0"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "example"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://w3id.org/def/ekaw2018"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This ontology is defined to be used as an example for the EKAW tutorial \"Catching up with ontological engineering\" in 2018"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://iot.linkeddata.es/def/core#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1.4"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#AccumulatedEnergyConsumed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Accumulated energy consumed"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#AccumulatedEnergyInjectedToGrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Accumulated energy imported to grid"
+  }, {
+    "@language" : "en",
+    "@value" : "Accumulated energy injected to grid"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ActivePowerAbsorbedFromGrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Active power absorbed from grid"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ActivePowerInjectedToGrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Active power injected to grid"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ActivePowerProduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Active power production"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ActivePowerSetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Active power set point"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ActivityTracker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Activity tracker example"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Sensor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ActualActivePowerGeneration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actual active power generation"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ActualActivePowerInjectedToGrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actual active power injected to grid"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ActualActivePowerLoad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actual active power load"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ActualActivePowerProduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actual active power production"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ActualChargingSessionDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actual charging session duration"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ActualEnergyConsumedChargingSession",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actual energy consumed charging session"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ActualReactivePowerGeneration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actual reactive power generation"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ActualReactivePowerInjectedToGrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actual reactive power injected to grid"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ActualReactivePowerLoad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actual reactive power load"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ActualReactivePowerProduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actual reactive power production"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#Actuator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An actuator is a device that accepts digital inputs and which acts on (changes) one or more properties of a physical entity on the basis of those inputs. An actuator is a specialization of an IoT device. An actuator acts on a physical entity. (definition taken from ISO/IEC 11404:2007)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actuator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "ISO/IEC CC 30141. Information technology - Internet of Things Reference architecutre (IoT RA)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Device"
+  }, {
+    "@id" : "http://www.w3.org/ns/sosa/Actuator"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#AlarmTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#AmbientTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ambient temperature"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#AverageCO2Concentration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Average CO2 concentration"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#AverageCO2ConcentrationDeviation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Average CO2 concentration deviation"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#AverageHumidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Average humidity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#AverageHumidityDeviation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Average humidity deviation"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#AverageLightIntensity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Average light intensity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#AverageMovemenetShare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Average movemenet share"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#AverageMovementTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Average movement time"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#AverageSound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Average sound"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#AverageSoundDeviation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Average sound deviation"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#AverageTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Average temperature"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#AverageTemperatureDeviation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Average temperature deviation"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#Azimuth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Azimuth"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#Baking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#BakingEndTimeHour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#BakingEndTimeMinute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#BakingRemainingTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bake remaining time"
+  }, {
+    "@language" : "en",
+    "@value" : "Baking remaining time"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#BakingStartTimeHour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#BakingStartTimeMinute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#BakingStep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Baking step"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#BakingTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#BakingTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#Battery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Battery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Device"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#BatteryNominalCapacity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Battery nominal capacity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#BatteryStorageUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Battery storage unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Device"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#BeaconReader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Beacon reader"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Device"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#BloodPressureMonitor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Blood pressure monitor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Sensor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#CO2Concentration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CO2 concentration"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#CO2Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CO2 Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Sensor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#CaloriesBurned",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Calories burned"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ChargeStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Charge status"
+  }, {
+    "@language" : "en",
+    "@value" : "State of charge"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#Charger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Charger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Device"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ChargingStationOperationalStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Charging station operational status"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ChildLock",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ConnectorCurrentChargingPower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Connector current charging power"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ConnectorDesiredMaxPower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Connector desired maximum power"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ConnectorSmartChargingProfile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Connector smart charging profile"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ConnectorStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Connector status"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#CurrentBakingStepRemainingTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Current baking step remaining time"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#DelayedBaking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An IoT device is a digital entity which bridges between real-world physical entities and the other digital entities of an IoT system. IoT device interacts one or more networks through which interactions are made with other entities. IoT device exposes one or more endpoints by which interactions are made. (definition taken from ISO/IEC 11404:2007)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "ISO/IEC CC 30141. Information technology - Internet of Things Reference architecutre (IoT RA)"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#DeviceLightStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device light status"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#DeviceStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device status"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#DeviceTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device temperature"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#DiastolicBloodPressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Diastolic blood pressure"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#DimmingLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dimming level"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#DistanceWalked",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Distance walked"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#DoorSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DoorSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Sensor"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#EBikeCharger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "eBikeCharger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Charger"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#EVCharger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electric vehicle charging point"
+  }, {
+    "@value" : "Electric vehicle charger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Charger"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ElapsedBakingTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bake elapse time"
+  }, {
+    "@language" : "en",
+    "@value" : "Elapsed baking time"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ElectricVehicle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electric vehicle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Device"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#Elevation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Elevation"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#EnergySupplySystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Energy supply system"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#EntryExit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Entry exit"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#FanSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fan speed"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#FastFreeze",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#FreezerDoorStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#FreezerLightStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#FreezerTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#HVACSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "HVAC Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Actuator"
+  }, {
+    "@id" : "http://w3id.org/def/ekaw2018#Sensor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#HeartRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Heart rate"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#HeaterDefaultTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Heater default temperature"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#HeaterMaxTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Heater maximum temperature"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#HeaterMeatProbeAllowed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Heater meat probe allowed"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#HeaterMinTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Heater minimum temperature"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#HeaterPreheatAllowed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Heater preheat allowed"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#HeaterSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#HighestCO2ConcentrationDeviation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Highest CO2 deviation"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#HighestHumidityDeviation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Highst humidity deviation"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#HighestSoundDeviation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Highest sound deviation"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#HighestTemperatureDeviation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Highst temperature deviation"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#HumiditySensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Humidity sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Sensor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#IndoorClimateQualitySensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Indoor climate quality sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Sensor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#IndoorEnvironmentalQualityScore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IEQ score"
+  }, {
+    "@language" : "en",
+    "@value" : "Indoor environmental quality score"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#InverterNominalPower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Inverter nominal power"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#LightColor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Light color"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#LightSwitch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Light switch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Actuator"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#Lightbulb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lightbulb"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Device"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Location"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#LowerStateOfChargeBoundary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lower state of charge boundary"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#Luminance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Luminance"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#LuminanceMeter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Luminance meter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Sensor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#MaxCO2Concentration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Maximum CO2"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#MaxHumidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Maximum humidity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#MaxLightIntensity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Maximum light intensity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#MaxPowerConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Maximum power consumption"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#MaxSound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Maximum sound"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#MaxTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Maximum temperature"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#MaximalCurrentOfChargingCable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Maximal current of charging cable"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#MaximalPowerPerConnector",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Maximal power per connector"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#MeanPowerConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mean power consumption"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#MeatProbeTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Meat probe temperature"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#MinCO2Concentration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Minimum CO2"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#MinHumidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Minimun humidity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#MinLightIntensity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Minimu light intensity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#MinPowerConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Minimum power consumption"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#MinSound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Minimum sound"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#MinTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Minimum temperature"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#Mode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mode"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#Motion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Motion"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#MotionSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Motion sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Sensor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#NoiseLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Noise level"
+  }, {
+    "@language" : "en",
+    "@value" : "Sound level"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#NoiseSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Noise sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Sensor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#NominalElectricVehicleCurrent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nominal electric vehicle current"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#NominalProductionCapacity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nominal production capacity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#NumberOfConnectors",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Number of connectors"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#OccupancySensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Occupancy sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Sensor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#OnOff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "On Off"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#OpenClosed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Open Closed"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#OvenDoorStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#PanicButton",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Panic button"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Device"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#PeopleCounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A people counter is a device that is used to measure the number of people traversing a certain passage or entrance. (Definition taken from https://en.wikipedia.org/wiki/People_counter)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "People counter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Sensor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#PhotoVoltaicPanelServiceLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Photo voltaic panel service level"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#PhotovoltaicPanel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Photovoltaic panel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Device"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#PowerFactorLowerBound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Power factor lower bound"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#PowerMeter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Power meter"
+  }, {
+    "@language" : "en",
+    "@value" : "Smart meter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Sensor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#PressureMat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pressure mat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Sensor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ReactivePowerAbsorbedFromGrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Reactive power absorbed from grid"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ReactivePowerInjectedToGrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Reactive power injected to grid"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ReactivePowerProduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Reactive power production"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ReactivePowerSetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Reactive power set point"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#RefrigeratorDoorStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#RefrigeratorLightStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#RefrigeratorTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#RelativeHumidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Relative humidity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A sensor is a device that detects and responds to some type of input from the physical environment and outputs digital data that can be transmitted over a network. A sensor is a specialization of an IoT device. A sensor monitors a physical entity. The output digital data may only be distantly related to the input from the physical environment and may be output with a significant time delay, depending on processing of the data within the device, for example, the recognition of the identity of a person from a surveillance camera device. (definition taken from ISO/IEC 11404:2007)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "ISO/IEC CC 30141. Information technology - Internet of Things Reference architecutre (IoT RA)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Device"
+  }, {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#SimultaneousCharging",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Simultaneous charging"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#Sleep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sleep"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#SmartOven",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Smart oven"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Device"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#SmartRefrigerator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Smart refrigerator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Device"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#Start",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#Steps",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Steps"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#Stop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#StoredEnergy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Stored energy"
+  }, {
+    "@value" : "Nominal EV current"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#SuperCool",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#SystolicBloodPressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Systolic blood pressure"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#Thermometer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Thermometer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Sensor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#Thermostat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Thermostat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Actuator"
+  }, {
+    "@id" : "http://w3id.org/def/ekaw2018#Sensor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#UpperStateOfChargeBoundary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Upper state of charge boundary"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#ValvePosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Valve position"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#WaterEnergyMeter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WaterEnergyMeter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Sensor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#WaterFlowMeter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WaterFlowMeter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Sensor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#Weight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Weight"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#WeightScale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Weight scale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Sensor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/ekaw2018#WindowSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WindowSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/ekaw2018#Sensor"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#cardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/Actuator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]

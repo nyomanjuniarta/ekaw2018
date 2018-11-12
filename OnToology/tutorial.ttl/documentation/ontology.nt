@@ -1,0 +1,757 @@
+<http://w3id.org/def/ekaw2018#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/def/ekaw2018#> <http://www.w3.org/2002/07/owl#imports> <http://iot.linkeddata.es/def/core#> .
+<http://w3id.org/def/ekaw2018#> <http://purl.org/dc/elements/1.1/publisher> <http://www.oeg-upm.net/> .
+<http://w3id.org/def/ekaw2018#> <http://purl.org/dc/elements/1.1/title> "EKAW2018 tutorial example"@en .
+<http://w3id.org/def/ekaw2018#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
+<http://w3id.org/def/ekaw2018#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "example" .
+<http://w3id.org/def/ekaw2018#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://w3id.org/def/ekaw2018" .
+<http://w3id.org/def/ekaw2018#> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology is defined to be used as an example for the EKAW tutorial \"Catching up with ontological engineering\" in 2018"@en .
+<http://w3id.org/def/ekaw2018#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.4" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#cardinality
+<http://www.w3.org/2002/07/owl#cardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/def/ekaw2018#ActivityTracker
+<http://w3id.org/def/ekaw2018#ActivityTracker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#ActivityTracker> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Sensor> .
+<http://w3id.org/def/ekaw2018#ActivityTracker> <http://www.w3.org/2000/01/rdf-schema#label> "Activity tracker example"@en .
+# 
+# http://w3id.org/def/ekaw2018#Actuator
+<http://w3id.org/def/ekaw2018#Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#Actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Device> .
+<http://w3id.org/def/ekaw2018#Actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Actuator> .
+<http://w3id.org/def/ekaw2018#Actuator> <http://www.w3.org/2000/01/rdf-schema#comment> "An actuator is a device that accepts digital inputs and which acts on (changes) one or more properties of a physical entity on the basis of those inputs. An actuator is a specialization of an IoT device. An actuator acts on a physical entity. (definition taken from ISO/IEC 11404:2007)"@en .
+<http://w3id.org/def/ekaw2018#Actuator> <http://www.w3.org/2000/01/rdf-schema#label> "Actuator"@en .
+<http://w3id.org/def/ekaw2018#Actuator> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "ISO/IEC CC 30141. Information technology - Internet of Things Reference architecutre (IoT RA)"@en .
+# 
+# http://w3id.org/def/ekaw2018#Battery
+<http://w3id.org/def/ekaw2018#Battery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#Battery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Device> .
+<http://w3id.org/def/ekaw2018#Battery> <http://www.w3.org/2000/01/rdf-schema#label> "Battery"@en .
+# 
+# http://w3id.org/def/ekaw2018#BatteryStorageUnit
+<http://w3id.org/def/ekaw2018#BatteryStorageUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#BatteryStorageUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Device> .
+<http://w3id.org/def/ekaw2018#BatteryStorageUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Battery storage unit"@en .
+# 
+# http://w3id.org/def/ekaw2018#BeaconReader
+<http://w3id.org/def/ekaw2018#BeaconReader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#BeaconReader> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Device> .
+<http://w3id.org/def/ekaw2018#BeaconReader> <http://www.w3.org/2000/01/rdf-schema#label> "Beacon reader"@en .
+# 
+# http://w3id.org/def/ekaw2018#BloodPressureMonitor
+<http://w3id.org/def/ekaw2018#BloodPressureMonitor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#BloodPressureMonitor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Sensor> .
+<http://w3id.org/def/ekaw2018#BloodPressureMonitor> <http://www.w3.org/2000/01/rdf-schema#label> "Blood pressure monitor"@en .
+# 
+# http://w3id.org/def/ekaw2018#CO2Sensor
+<http://w3id.org/def/ekaw2018#CO2Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#CO2Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Sensor> .
+<http://w3id.org/def/ekaw2018#CO2Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "CO2 Sensor"@en .
+# 
+# http://w3id.org/def/ekaw2018#Charger
+<http://w3id.org/def/ekaw2018#Charger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#Charger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Device> .
+<http://w3id.org/def/ekaw2018#Charger> <http://www.w3.org/2000/01/rdf-schema#label> "Charger"@en .
+# 
+# http://w3id.org/def/ekaw2018#Device
+<http://w3id.org/def/ekaw2018#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "An IoT device is a digital entity which bridges between real-world physical entities and the other digital entities of an IoT system. IoT device interacts one or more networks through which interactions are made with other entities. IoT device exposes one or more endpoints by which interactions are made. (definition taken from ISO/IEC 11404:2007)"@en .
+<http://w3id.org/def/ekaw2018#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device"@en .
+<http://w3id.org/def/ekaw2018#Device> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "ISO/IEC CC 30141. Information technology - Internet of Things Reference architecutre (IoT RA)"@en .
+# 
+# http://w3id.org/def/ekaw2018#DoorSensor
+<http://w3id.org/def/ekaw2018#DoorSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#DoorSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Sensor> .
+<http://w3id.org/def/ekaw2018#DoorSensor> <http://www.w3.org/2000/01/rdf-schema#label> "DoorSensor"@en .
+<http://w3id.org/def/ekaw2018#DoorSensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://w3id.org/def/ekaw2018#EBikeCharger
+<http://w3id.org/def/ekaw2018#EBikeCharger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#EBikeCharger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Charger> .
+<http://w3id.org/def/ekaw2018#EBikeCharger> <http://www.w3.org/2000/01/rdf-schema#label> "eBikeCharger"@en .
+# 
+# http://w3id.org/def/ekaw2018#EVCharger
+<http://w3id.org/def/ekaw2018#EVCharger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#EVCharger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Charger> .
+<http://w3id.org/def/ekaw2018#EVCharger> <http://www.w3.org/2000/01/rdf-schema#label> "Electric vehicle charging point"@en .
+<http://w3id.org/def/ekaw2018#EVCharger> <http://www.w3.org/2000/01/rdf-schema#label> "Electric vehicle charger" .
+# 
+# http://w3id.org/def/ekaw2018#ElectricVehicle
+<http://w3id.org/def/ekaw2018#ElectricVehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#ElectricVehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Device> .
+<http://w3id.org/def/ekaw2018#ElectricVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Electric vehicle"@en .
+# 
+# http://w3id.org/def/ekaw2018#HVACSensor
+<http://w3id.org/def/ekaw2018#HVACSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#HVACSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Actuator> .
+<http://w3id.org/def/ekaw2018#HVACSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Sensor> .
+<http://w3id.org/def/ekaw2018#HVACSensor> <http://www.w3.org/2000/01/rdf-schema#label> "HVAC Sensor"@en .
+# 
+# http://w3id.org/def/ekaw2018#HumiditySensor
+<http://w3id.org/def/ekaw2018#HumiditySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#HumiditySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Sensor> .
+<http://w3id.org/def/ekaw2018#HumiditySensor> <http://www.w3.org/2000/01/rdf-schema#label> "Humidity sensor"@en .
+# 
+# http://w3id.org/def/ekaw2018#IndoorClimateQualitySensor
+<http://w3id.org/def/ekaw2018#IndoorClimateQualitySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#IndoorClimateQualitySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Sensor> .
+<http://w3id.org/def/ekaw2018#IndoorClimateQualitySensor> <http://www.w3.org/2000/01/rdf-schema#label> "Indoor climate quality sensor"@en .
+# 
+# http://w3id.org/def/ekaw2018#LightSwitch
+<http://w3id.org/def/ekaw2018#LightSwitch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Actuator> .
+<http://w3id.org/def/ekaw2018#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#label> "Light switch"@en .
+# 
+# http://w3id.org/def/ekaw2018#Lightbulb
+<http://w3id.org/def/ekaw2018#Lightbulb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#Lightbulb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Device> .
+<http://w3id.org/def/ekaw2018#Lightbulb> <http://www.w3.org/2000/01/rdf-schema#label> "Lightbulb"@en .
+# 
+# http://w3id.org/def/ekaw2018#LuminanceMeter
+<http://w3id.org/def/ekaw2018#LuminanceMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#LuminanceMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Sensor> .
+<http://w3id.org/def/ekaw2018#LuminanceMeter> <http://www.w3.org/2000/01/rdf-schema#label> "Luminance meter"@en .
+# 
+# http://w3id.org/def/ekaw2018#MotionSensor
+<http://w3id.org/def/ekaw2018#MotionSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#MotionSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Sensor> .
+<http://w3id.org/def/ekaw2018#MotionSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Motion sensor"@en .
+# 
+# http://w3id.org/def/ekaw2018#NoiseSensor
+<http://w3id.org/def/ekaw2018#NoiseSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#NoiseSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Sensor> .
+<http://w3id.org/def/ekaw2018#NoiseSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Noise sensor"@en .
+# 
+# http://w3id.org/def/ekaw2018#OccupancySensor
+<http://w3id.org/def/ekaw2018#OccupancySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#OccupancySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Sensor> .
+<http://w3id.org/def/ekaw2018#OccupancySensor> <http://www.w3.org/2000/01/rdf-schema#label> "Occupancy sensor"@en .
+# 
+# http://w3id.org/def/ekaw2018#PanicButton
+<http://w3id.org/def/ekaw2018#PanicButton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#PanicButton> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Device> .
+<http://w3id.org/def/ekaw2018#PanicButton> <http://www.w3.org/2000/01/rdf-schema#label> "Panic button"@en .
+# 
+# http://w3id.org/def/ekaw2018#PeopleCounter
+<http://w3id.org/def/ekaw2018#PeopleCounter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#PeopleCounter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Sensor> .
+<http://w3id.org/def/ekaw2018#PeopleCounter> <http://www.w3.org/2000/01/rdf-schema#comment> "A people counter is a device that is used to measure the number of people traversing a certain passage or entrance. (Definition taken from https://en.wikipedia.org/wiki/People_counter)"@en .
+<http://w3id.org/def/ekaw2018#PeopleCounter> <http://www.w3.org/2000/01/rdf-schema#label> "People counter"@en .
+# 
+# http://w3id.org/def/ekaw2018#PhotovoltaicPanel
+<http://w3id.org/def/ekaw2018#PhotovoltaicPanel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#PhotovoltaicPanel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Device> .
+<http://w3id.org/def/ekaw2018#PhotovoltaicPanel> <http://www.w3.org/2000/01/rdf-schema#label> "Photovoltaic panel"@en .
+# 
+# http://w3id.org/def/ekaw2018#PowerMeter
+<http://w3id.org/def/ekaw2018#PowerMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#PowerMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Sensor> .
+<http://w3id.org/def/ekaw2018#PowerMeter> <http://www.w3.org/2000/01/rdf-schema#label> "Power meter"@en .
+<http://w3id.org/def/ekaw2018#PowerMeter> <http://www.w3.org/2000/01/rdf-schema#label> "Smart meter"@en .
+# 
+# http://w3id.org/def/ekaw2018#PressureMat
+<http://w3id.org/def/ekaw2018#PressureMat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#PressureMat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Sensor> .
+<http://w3id.org/def/ekaw2018#PressureMat> <http://www.w3.org/2000/01/rdf-schema#label> "Pressure mat"@en .
+# 
+# http://w3id.org/def/ekaw2018#Sensor
+<http://w3id.org/def/ekaw2018#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Device> .
+<http://w3id.org/def/ekaw2018#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+<http://w3id.org/def/ekaw2018#Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor is a device that detects and responds to some type of input from the physical environment and outputs digital data that can be transmitted over a network. A sensor is a specialization of an IoT device. A sensor monitors a physical entity. The output digital data may only be distantly related to the input from the physical environment and may be output with a significant time delay, depending on processing of the data within the device, for example, the recognition of the identity of a person from a surveillance camera device. (definition taken from ISO/IEC 11404:2007)"@en .
+<http://w3id.org/def/ekaw2018#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor"@en .
+<http://w3id.org/def/ekaw2018#Sensor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "ISO/IEC CC 30141. Information technology - Internet of Things Reference architecutre (IoT RA)"@en .
+# 
+# http://w3id.org/def/ekaw2018#SmartOven
+<http://w3id.org/def/ekaw2018#SmartOven> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#SmartOven> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Device> .
+<http://w3id.org/def/ekaw2018#SmartOven> <http://www.w3.org/2000/01/rdf-schema#label> "Smart oven"@en .
+# 
+# http://w3id.org/def/ekaw2018#SmartRefrigerator
+<http://w3id.org/def/ekaw2018#SmartRefrigerator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#SmartRefrigerator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Device> .
+<http://w3id.org/def/ekaw2018#SmartRefrigerator> <http://www.w3.org/2000/01/rdf-schema#label> "Smart refrigerator"@en .
+# 
+# http://w3id.org/def/ekaw2018#Thermometer
+<http://w3id.org/def/ekaw2018#Thermometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#Thermometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Sensor> .
+<http://w3id.org/def/ekaw2018#Thermometer> <http://www.w3.org/2000/01/rdf-schema#label> "Thermometer"@en .
+# 
+# http://w3id.org/def/ekaw2018#Thermostat
+<http://w3id.org/def/ekaw2018#Thermostat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#Thermostat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Actuator> .
+<http://w3id.org/def/ekaw2018#Thermostat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Sensor> .
+<http://w3id.org/def/ekaw2018#Thermostat> <http://www.w3.org/2000/01/rdf-schema#label> "Thermostat"@en .
+# 
+# http://w3id.org/def/ekaw2018#WaterEnergyMeter
+<http://w3id.org/def/ekaw2018#WaterEnergyMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#WaterEnergyMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Sensor> .
+<http://w3id.org/def/ekaw2018#WaterEnergyMeter> <http://www.w3.org/2000/01/rdf-schema#label> "WaterEnergyMeter"@en .
+# 
+# http://w3id.org/def/ekaw2018#WaterFlowMeter
+<http://w3id.org/def/ekaw2018#WaterFlowMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#WaterFlowMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Sensor> .
+<http://w3id.org/def/ekaw2018#WaterFlowMeter> <http://www.w3.org/2000/01/rdf-schema#label> "WaterFlowMeter"@en .
+# 
+# http://w3id.org/def/ekaw2018#WeightScale
+<http://w3id.org/def/ekaw2018#WeightScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#WeightScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Sensor> .
+<http://w3id.org/def/ekaw2018#WeightScale> <http://www.w3.org/2000/01/rdf-schema#label> "Weight scale"@en .
+# 
+# http://w3id.org/def/ekaw2018#WindowSensor
+<http://w3id.org/def/ekaw2018#WindowSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ekaw2018#WindowSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/ekaw2018#Sensor> .
+<http://w3id.org/def/ekaw2018#WindowSensor> <http://www.w3.org/2000/01/rdf-schema#label> "WindowSensor"@en .
+<http://w3id.org/def/ekaw2018#WindowSensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://www.w3.org/ns/sosa/Actuator
+<http://www.w3.org/ns/sosa/Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/sosa/Sensor
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/def/ekaw2018#AccumulatedEnergyConsumed
+<http://w3id.org/def/ekaw2018#AccumulatedEnergyConsumed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#AccumulatedEnergyConsumed> <http://www.w3.org/2000/01/rdf-schema#label> "Accumulated energy consumed"@en .
+# 
+# http://w3id.org/def/ekaw2018#AccumulatedEnergyInjectedToGrid
+<http://w3id.org/def/ekaw2018#AccumulatedEnergyInjectedToGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#AccumulatedEnergyInjectedToGrid> <http://www.w3.org/2000/01/rdf-schema#label> "Accumulated energy imported to grid"@en .
+<http://w3id.org/def/ekaw2018#AccumulatedEnergyInjectedToGrid> <http://www.w3.org/2000/01/rdf-schema#label> "Accumulated energy injected to grid"@en .
+# 
+# http://w3id.org/def/ekaw2018#ActivePowerAbsorbedFromGrid
+<http://w3id.org/def/ekaw2018#ActivePowerAbsorbedFromGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ActivePowerAbsorbedFromGrid> <http://www.w3.org/2000/01/rdf-schema#label> "Active power absorbed from grid"@en .
+# 
+# http://w3id.org/def/ekaw2018#ActivePowerInjectedToGrid
+<http://w3id.org/def/ekaw2018#ActivePowerInjectedToGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ActivePowerInjectedToGrid> <http://www.w3.org/2000/01/rdf-schema#label> "Active power injected to grid"@en .
+# 
+# http://w3id.org/def/ekaw2018#ActivePowerProduction
+<http://w3id.org/def/ekaw2018#ActivePowerProduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ActivePowerProduction> <http://www.w3.org/2000/01/rdf-schema#label> "Active power production"@en .
+# 
+# http://w3id.org/def/ekaw2018#ActivePowerSetPoint
+<http://w3id.org/def/ekaw2018#ActivePowerSetPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ActivePowerSetPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Active power set point"@en .
+# 
+# http://w3id.org/def/ekaw2018#ActualActivePowerGeneration
+<http://w3id.org/def/ekaw2018#ActualActivePowerGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ActualActivePowerGeneration> <http://www.w3.org/2000/01/rdf-schema#label> "Actual active power generation"@en .
+# 
+# http://w3id.org/def/ekaw2018#ActualActivePowerInjectedToGrid
+<http://w3id.org/def/ekaw2018#ActualActivePowerInjectedToGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ActualActivePowerInjectedToGrid> <http://www.w3.org/2000/01/rdf-schema#label> "Actual active power injected to grid"@en .
+# 
+# http://w3id.org/def/ekaw2018#ActualActivePowerLoad
+<http://w3id.org/def/ekaw2018#ActualActivePowerLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ActualActivePowerLoad> <http://www.w3.org/2000/01/rdf-schema#label> "Actual active power load"@en .
+# 
+# http://w3id.org/def/ekaw2018#ActualActivePowerProduction
+<http://w3id.org/def/ekaw2018#ActualActivePowerProduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ActualActivePowerProduction> <http://www.w3.org/2000/01/rdf-schema#label> "Actual active power production"@en .
+# 
+# http://w3id.org/def/ekaw2018#ActualChargingSessionDuration
+<http://w3id.org/def/ekaw2018#ActualChargingSessionDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ActualChargingSessionDuration> <http://www.w3.org/2000/01/rdf-schema#label> "Actual charging session duration"@en .
+# 
+# http://w3id.org/def/ekaw2018#ActualEnergyConsumedChargingSession
+<http://w3id.org/def/ekaw2018#ActualEnergyConsumedChargingSession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ActualEnergyConsumedChargingSession> <http://www.w3.org/2000/01/rdf-schema#label> "Actual energy consumed charging session"@en .
+# 
+# http://w3id.org/def/ekaw2018#ActualReactivePowerGeneration
+<http://w3id.org/def/ekaw2018#ActualReactivePowerGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ActualReactivePowerGeneration> <http://www.w3.org/2000/01/rdf-schema#label> "Actual reactive power generation"@en .
+# 
+# http://w3id.org/def/ekaw2018#ActualReactivePowerInjectedToGrid
+<http://w3id.org/def/ekaw2018#ActualReactivePowerInjectedToGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ActualReactivePowerInjectedToGrid> <http://www.w3.org/2000/01/rdf-schema#label> "Actual reactive power injected to grid"@en .
+# 
+# http://w3id.org/def/ekaw2018#ActualReactivePowerLoad
+<http://w3id.org/def/ekaw2018#ActualReactivePowerLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ActualReactivePowerLoad> <http://www.w3.org/2000/01/rdf-schema#label> "Actual reactive power load"@en .
+# 
+# http://w3id.org/def/ekaw2018#ActualReactivePowerProduction
+<http://w3id.org/def/ekaw2018#ActualReactivePowerProduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ActualReactivePowerProduction> <http://www.w3.org/2000/01/rdf-schema#label> "Actual reactive power production"@en .
+# 
+# http://w3id.org/def/ekaw2018#AlarmTime
+<http://w3id.org/def/ekaw2018#AlarmTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#AmbientTemperature
+<http://w3id.org/def/ekaw2018#AmbientTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#AmbientTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Ambient temperature"@en .
+# 
+# http://w3id.org/def/ekaw2018#AverageCO2Concentration
+<http://w3id.org/def/ekaw2018#AverageCO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#AverageCO2Concentration> <http://www.w3.org/2000/01/rdf-schema#label> "Average CO2 concentration"@en .
+# 
+# http://w3id.org/def/ekaw2018#AverageCO2ConcentrationDeviation
+<http://w3id.org/def/ekaw2018#AverageCO2ConcentrationDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#AverageCO2ConcentrationDeviation> <http://purl.org/dc/terms/title> "Average CO2 concentration deviation"@en .
+# 
+# http://w3id.org/def/ekaw2018#AverageHumidity
+<http://w3id.org/def/ekaw2018#AverageHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#AverageHumidity> <http://www.w3.org/2000/01/rdf-schema#label> "Average humidity"@en .
+# 
+# http://w3id.org/def/ekaw2018#AverageHumidityDeviation
+<http://w3id.org/def/ekaw2018#AverageHumidityDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#AverageHumidityDeviation> <http://www.w3.org/2000/01/rdf-schema#label> "Average humidity deviation"@en .
+# 
+# http://w3id.org/def/ekaw2018#AverageLightIntensity
+<http://w3id.org/def/ekaw2018#AverageLightIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#AverageLightIntensity> <http://www.w3.org/2000/01/rdf-schema#label> "Average light intensity"@en .
+# 
+# http://w3id.org/def/ekaw2018#AverageMovemenetShare
+<http://w3id.org/def/ekaw2018#AverageMovemenetShare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#AverageMovemenetShare> <http://www.w3.org/2000/01/rdf-schema#label> "Average movemenet share"@en .
+# 
+# http://w3id.org/def/ekaw2018#AverageMovementTime
+<http://w3id.org/def/ekaw2018#AverageMovementTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#AverageMovementTime> <http://www.w3.org/2000/01/rdf-schema#label> "Average movement time"@en .
+# 
+# http://w3id.org/def/ekaw2018#AverageSound
+<http://w3id.org/def/ekaw2018#AverageSound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#AverageSound> <http://www.w3.org/2000/01/rdf-schema#label> "Average sound"@en .
+# 
+# http://w3id.org/def/ekaw2018#AverageSoundDeviation
+<http://w3id.org/def/ekaw2018#AverageSoundDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#AverageSoundDeviation> <http://www.w3.org/2000/01/rdf-schema#label> "Average sound deviation"@en .
+# 
+# http://w3id.org/def/ekaw2018#AverageTemperature
+<http://w3id.org/def/ekaw2018#AverageTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#AverageTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Average temperature"@en .
+# 
+# http://w3id.org/def/ekaw2018#AverageTemperatureDeviation
+<http://w3id.org/def/ekaw2018#AverageTemperatureDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#AverageTemperatureDeviation> <http://www.w3.org/2000/01/rdf-schema#label> "Average temperature deviation"@en .
+# 
+# http://w3id.org/def/ekaw2018#Azimuth
+<http://w3id.org/def/ekaw2018#Azimuth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#Azimuth> <http://www.w3.org/2000/01/rdf-schema#label> "Azimuth"@en .
+# 
+# http://w3id.org/def/ekaw2018#Baking
+<http://w3id.org/def/ekaw2018#Baking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#BakingEndTimeHour
+<http://w3id.org/def/ekaw2018#BakingEndTimeHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#BakingEndTimeMinute
+<http://w3id.org/def/ekaw2018#BakingEndTimeMinute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#BakingRemainingTime
+<http://w3id.org/def/ekaw2018#BakingRemainingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#BakingRemainingTime> <http://www.w3.org/2000/01/rdf-schema#label> "Bake remaining time"@en .
+<http://w3id.org/def/ekaw2018#BakingRemainingTime> <http://www.w3.org/2000/01/rdf-schema#label> "Baking remaining time"@en .
+# 
+# http://w3id.org/def/ekaw2018#BakingStartTimeHour
+<http://w3id.org/def/ekaw2018#BakingStartTimeHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#BakingStartTimeMinute
+<http://w3id.org/def/ekaw2018#BakingStartTimeMinute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#BakingStep
+<http://w3id.org/def/ekaw2018#BakingStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#BakingStep> <http://www.w3.org/2000/01/rdf-schema#label> "Baking step"@en .
+# 
+# http://w3id.org/def/ekaw2018#BakingTemperature
+<http://w3id.org/def/ekaw2018#BakingTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#BakingTime
+<http://w3id.org/def/ekaw2018#BakingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#BatteryNominalCapacity
+<http://w3id.org/def/ekaw2018#BatteryNominalCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#BatteryNominalCapacity> <http://www.w3.org/2000/01/rdf-schema#label> "Battery nominal capacity"@en .
+# 
+# http://w3id.org/def/ekaw2018#CO2Concentration
+<http://w3id.org/def/ekaw2018#CO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#CO2Concentration> <http://www.w3.org/2000/01/rdf-schema#label> "CO2 concentration"@en .
+# 
+# http://w3id.org/def/ekaw2018#CaloriesBurned
+<http://w3id.org/def/ekaw2018#CaloriesBurned> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#CaloriesBurned> <http://www.w3.org/2000/01/rdf-schema#label> "Calories burned"@en .
+# 
+# http://w3id.org/def/ekaw2018#ChargeStatus
+<http://w3id.org/def/ekaw2018#ChargeStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ChargeStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Charge status"@en .
+<http://w3id.org/def/ekaw2018#ChargeStatus> <http://www.w3.org/2000/01/rdf-schema#label> "State of charge"@en .
+# 
+# http://w3id.org/def/ekaw2018#ChargingStationOperationalStatus
+<http://w3id.org/def/ekaw2018#ChargingStationOperationalStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ChargingStationOperationalStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Charging station operational status"@en .
+# 
+# http://w3id.org/def/ekaw2018#ChildLock
+<http://w3id.org/def/ekaw2018#ChildLock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#ConnectorCurrentChargingPower
+<http://w3id.org/def/ekaw2018#ConnectorCurrentChargingPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ConnectorCurrentChargingPower> <http://www.w3.org/2000/01/rdf-schema#label> "Connector current charging power"@en .
+# 
+# http://w3id.org/def/ekaw2018#ConnectorDesiredMaxPower
+<http://w3id.org/def/ekaw2018#ConnectorDesiredMaxPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ConnectorDesiredMaxPower> <http://www.w3.org/2000/01/rdf-schema#label> "Connector desired maximum power"@en .
+# 
+# http://w3id.org/def/ekaw2018#ConnectorSmartChargingProfile
+<http://w3id.org/def/ekaw2018#ConnectorSmartChargingProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ConnectorSmartChargingProfile> <http://www.w3.org/2000/01/rdf-schema#label> "Connector smart charging profile"@en .
+# 
+# http://w3id.org/def/ekaw2018#ConnectorStatus
+<http://w3id.org/def/ekaw2018#ConnectorStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ConnectorStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Connector status"@en .
+# 
+# http://w3id.org/def/ekaw2018#CurrentBakingStepRemainingTime
+<http://w3id.org/def/ekaw2018#CurrentBakingStepRemainingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#CurrentBakingStepRemainingTime> <http://www.w3.org/2000/01/rdf-schema#label> "Current baking step remaining time"@en .
+# 
+# http://w3id.org/def/ekaw2018#DelayedBaking
+<http://w3id.org/def/ekaw2018#DelayedBaking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#DeviceLightStatus
+<http://w3id.org/def/ekaw2018#DeviceLightStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#DeviceLightStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Device light status"@en .
+# 
+# http://w3id.org/def/ekaw2018#DeviceStatus
+<http://w3id.org/def/ekaw2018#DeviceStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#DeviceStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Device status"@en .
+# 
+# http://w3id.org/def/ekaw2018#DeviceTemperature
+<http://w3id.org/def/ekaw2018#DeviceTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#DeviceTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Device temperature"@en .
+# 
+# http://w3id.org/def/ekaw2018#DiastolicBloodPressure
+<http://w3id.org/def/ekaw2018#DiastolicBloodPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#DiastolicBloodPressure> <http://www.w3.org/2000/01/rdf-schema#label> "Diastolic blood pressure"@en .
+# 
+# http://w3id.org/def/ekaw2018#DimmingLevel
+<http://w3id.org/def/ekaw2018#DimmingLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#DimmingLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Dimming level"@en .
+# 
+# http://w3id.org/def/ekaw2018#DistanceWalked
+<http://w3id.org/def/ekaw2018#DistanceWalked> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#DistanceWalked> <http://www.w3.org/2000/01/rdf-schema#label> "Distance walked"@en .
+# 
+# http://w3id.org/def/ekaw2018#ElapsedBakingTime
+<http://w3id.org/def/ekaw2018#ElapsedBakingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ElapsedBakingTime> <http://www.w3.org/2000/01/rdf-schema#label> "Bake elapse time"@en .
+<http://w3id.org/def/ekaw2018#ElapsedBakingTime> <http://www.w3.org/2000/01/rdf-schema#label> "Elapsed baking time"@en .
+# 
+# http://w3id.org/def/ekaw2018#Elevation
+<http://w3id.org/def/ekaw2018#Elevation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#Elevation> <http://www.w3.org/2000/01/rdf-schema#label> "Elevation"@en .
+# 
+# http://w3id.org/def/ekaw2018#EnergySupplySystem
+<http://w3id.org/def/ekaw2018#EnergySupplySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#EnergySupplySystem> <http://www.w3.org/2000/01/rdf-schema#label> "Energy supply system"@en .
+# 
+# http://w3id.org/def/ekaw2018#EntryExit
+<http://w3id.org/def/ekaw2018#EntryExit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#EntryExit> <http://www.w3.org/2000/01/rdf-schema#label> "Entry exit"@en .
+# 
+# http://w3id.org/def/ekaw2018#FanSpeed
+<http://w3id.org/def/ekaw2018#FanSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#FanSpeed> <http://www.w3.org/2000/01/rdf-schema#label> "Fan speed"@en .
+# 
+# http://w3id.org/def/ekaw2018#FastFreeze
+<http://w3id.org/def/ekaw2018#FastFreeze> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#FreezerDoorStatus
+<http://w3id.org/def/ekaw2018#FreezerDoorStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#FreezerLightStatus
+<http://w3id.org/def/ekaw2018#FreezerLightStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#FreezerTemperature
+<http://w3id.org/def/ekaw2018#FreezerTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#HeartRate
+<http://w3id.org/def/ekaw2018#HeartRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#HeartRate> <http://www.w3.org/2000/01/rdf-schema#label> "Heart rate"@en .
+# 
+# http://w3id.org/def/ekaw2018#HeaterDefaultTemperature
+<http://w3id.org/def/ekaw2018#HeaterDefaultTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#HeaterDefaultTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Heater default temperature"@en .
+# 
+# http://w3id.org/def/ekaw2018#HeaterMaxTemperature
+<http://w3id.org/def/ekaw2018#HeaterMaxTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#HeaterMaxTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Heater maximum temperature"@en .
+# 
+# http://w3id.org/def/ekaw2018#HeaterMeatProbeAllowed
+<http://w3id.org/def/ekaw2018#HeaterMeatProbeAllowed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#HeaterMeatProbeAllowed> <http://www.w3.org/2000/01/rdf-schema#label> "Heater meat probe allowed"@en .
+# 
+# http://w3id.org/def/ekaw2018#HeaterMinTemperature
+<http://w3id.org/def/ekaw2018#HeaterMinTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#HeaterMinTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Heater minimum temperature"@en .
+# 
+# http://w3id.org/def/ekaw2018#HeaterPreheatAllowed
+<http://w3id.org/def/ekaw2018#HeaterPreheatAllowed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#HeaterPreheatAllowed> <http://www.w3.org/2000/01/rdf-schema#label> "Heater preheat allowed"@en .
+# 
+# http://w3id.org/def/ekaw2018#HeaterSystem
+<http://w3id.org/def/ekaw2018#HeaterSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#HighestCO2ConcentrationDeviation
+<http://w3id.org/def/ekaw2018#HighestCO2ConcentrationDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#HighestCO2ConcentrationDeviation> <http://www.w3.org/2000/01/rdf-schema#label> "Highest CO2 deviation"@en .
+# 
+# http://w3id.org/def/ekaw2018#HighestHumidityDeviation
+<http://w3id.org/def/ekaw2018#HighestHumidityDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#HighestHumidityDeviation> <http://www.w3.org/2000/01/rdf-schema#label> "Highst humidity deviation"@en .
+# 
+# http://w3id.org/def/ekaw2018#HighestSoundDeviation
+<http://w3id.org/def/ekaw2018#HighestSoundDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#HighestSoundDeviation> <http://www.w3.org/2000/01/rdf-schema#label> "Highest sound deviation"@en .
+# 
+# http://w3id.org/def/ekaw2018#HighestTemperatureDeviation
+<http://w3id.org/def/ekaw2018#HighestTemperatureDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#HighestTemperatureDeviation> <http://www.w3.org/2000/01/rdf-schema#label> "Highst temperature deviation"@en .
+# 
+# http://w3id.org/def/ekaw2018#IndoorEnvironmentalQualityScore
+<http://w3id.org/def/ekaw2018#IndoorEnvironmentalQualityScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#IndoorEnvironmentalQualityScore> <http://www.w3.org/2000/01/rdf-schema#label> "IEQ score"@en .
+<http://w3id.org/def/ekaw2018#IndoorEnvironmentalQualityScore> <http://www.w3.org/2000/01/rdf-schema#label> "Indoor environmental quality score"@en .
+# 
+# http://w3id.org/def/ekaw2018#InverterNominalPower
+<http://w3id.org/def/ekaw2018#InverterNominalPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#InverterNominalPower> <http://www.w3.org/2000/01/rdf-schema#label> "Inverter nominal power"@en .
+# 
+# http://w3id.org/def/ekaw2018#LightColor
+<http://w3id.org/def/ekaw2018#LightColor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#LightColor> <http://www.w3.org/2000/01/rdf-schema#label> "Light color"@en .
+# 
+# http://w3id.org/def/ekaw2018#Location
+<http://w3id.org/def/ekaw2018#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
+# 
+# http://w3id.org/def/ekaw2018#LowerStateOfChargeBoundary
+<http://w3id.org/def/ekaw2018#LowerStateOfChargeBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#LowerStateOfChargeBoundary> <http://www.w3.org/2000/01/rdf-schema#label> "Lower state of charge boundary"@en .
+# 
+# http://w3id.org/def/ekaw2018#Luminance
+<http://w3id.org/def/ekaw2018#Luminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#Luminance> <http://www.w3.org/2000/01/rdf-schema#label> "Luminance"@en .
+# 
+# http://w3id.org/def/ekaw2018#MaxCO2Concentration
+<http://w3id.org/def/ekaw2018#MaxCO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#MaxCO2Concentration> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum CO2"@en .
+# 
+# http://w3id.org/def/ekaw2018#MaxHumidity
+<http://w3id.org/def/ekaw2018#MaxHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#MaxHumidity> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum humidity"@en .
+# 
+# http://w3id.org/def/ekaw2018#MaxLightIntensity
+<http://w3id.org/def/ekaw2018#MaxLightIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#MaxLightIntensity> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum light intensity"@en .
+# 
+# http://w3id.org/def/ekaw2018#MaxPowerConsumption
+<http://w3id.org/def/ekaw2018#MaxPowerConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#MaxPowerConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum power consumption"@en .
+# 
+# http://w3id.org/def/ekaw2018#MaxSound
+<http://w3id.org/def/ekaw2018#MaxSound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#MaxSound> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum sound"@en .
+# 
+# http://w3id.org/def/ekaw2018#MaxTemperature
+<http://w3id.org/def/ekaw2018#MaxTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#MaxTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum temperature"@en .
+# 
+# http://w3id.org/def/ekaw2018#MaximalCurrentOfChargingCable
+<http://w3id.org/def/ekaw2018#MaximalCurrentOfChargingCable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#MaximalCurrentOfChargingCable> <http://www.w3.org/2000/01/rdf-schema#label> "Maximal current of charging cable"@en .
+# 
+# http://w3id.org/def/ekaw2018#MaximalPowerPerConnector
+<http://w3id.org/def/ekaw2018#MaximalPowerPerConnector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#MaximalPowerPerConnector> <http://www.w3.org/2000/01/rdf-schema#label> "Maximal power per connector"@en .
+# 
+# http://w3id.org/def/ekaw2018#MeanPowerConsumption
+<http://w3id.org/def/ekaw2018#MeanPowerConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#MeanPowerConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "Mean power consumption"@en .
+# 
+# http://w3id.org/def/ekaw2018#MeatProbeTemperature
+<http://w3id.org/def/ekaw2018#MeatProbeTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#MeatProbeTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Meat probe temperature"@en .
+# 
+# http://w3id.org/def/ekaw2018#MinCO2Concentration
+<http://w3id.org/def/ekaw2018#MinCO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#MinCO2Concentration> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum CO2"@en .
+# 
+# http://w3id.org/def/ekaw2018#MinHumidity
+<http://w3id.org/def/ekaw2018#MinHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#MinHumidity> <http://www.w3.org/2000/01/rdf-schema#label> "Minimun humidity"@en .
+# 
+# http://w3id.org/def/ekaw2018#MinLightIntensity
+<http://w3id.org/def/ekaw2018#MinLightIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#MinLightIntensity> <http://www.w3.org/2000/01/rdf-schema#label> "Minimu light intensity"@en .
+# 
+# http://w3id.org/def/ekaw2018#MinPowerConsumption
+<http://w3id.org/def/ekaw2018#MinPowerConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#MinPowerConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum power consumption"@en .
+# 
+# http://w3id.org/def/ekaw2018#MinSound
+<http://w3id.org/def/ekaw2018#MinSound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#MinSound> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum sound"@en .
+# 
+# http://w3id.org/def/ekaw2018#MinTemperature
+<http://w3id.org/def/ekaw2018#MinTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#MinTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum temperature"@en .
+# 
+# http://w3id.org/def/ekaw2018#Mode
+<http://w3id.org/def/ekaw2018#Mode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#Mode> <http://www.w3.org/2000/01/rdf-schema#label> "Mode"@en .
+# 
+# http://w3id.org/def/ekaw2018#Motion
+<http://w3id.org/def/ekaw2018#Motion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#Motion> <http://www.w3.org/2000/01/rdf-schema#label> "Motion"@en .
+# 
+# http://w3id.org/def/ekaw2018#NoiseLevel
+<http://w3id.org/def/ekaw2018#NoiseLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#NoiseLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Noise level"@en .
+<http://w3id.org/def/ekaw2018#NoiseLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Sound level"@en .
+# 
+# http://w3id.org/def/ekaw2018#NominalElectricVehicleCurrent
+<http://w3id.org/def/ekaw2018#NominalElectricVehicleCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#NominalElectricVehicleCurrent> <http://www.w3.org/2000/01/rdf-schema#label> "Nominal electric vehicle current"@en .
+# 
+# http://w3id.org/def/ekaw2018#NominalProductionCapacity
+<http://w3id.org/def/ekaw2018#NominalProductionCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#NominalProductionCapacity> <http://www.w3.org/2000/01/rdf-schema#label> "Nominal production capacity"@en .
+# 
+# http://w3id.org/def/ekaw2018#NumberOfConnectors
+<http://w3id.org/def/ekaw2018#NumberOfConnectors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#NumberOfConnectors> <http://www.w3.org/2000/01/rdf-schema#label> "Number of connectors"@en .
+# 
+# http://w3id.org/def/ekaw2018#OnOff
+<http://w3id.org/def/ekaw2018#OnOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#OnOff> <http://www.w3.org/2000/01/rdf-schema#label> "On Off"@en .
+# 
+# http://w3id.org/def/ekaw2018#OpenClosed
+<http://w3id.org/def/ekaw2018#OpenClosed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#OpenClosed> <http://www.w3.org/2000/01/rdf-schema#label> "Open Closed"@en .
+# 
+# http://w3id.org/def/ekaw2018#OvenDoorStatus
+<http://w3id.org/def/ekaw2018#OvenDoorStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#PhotoVoltaicPanelServiceLevel
+<http://w3id.org/def/ekaw2018#PhotoVoltaicPanelServiceLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#PhotoVoltaicPanelServiceLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Photo voltaic panel service level"@en .
+# 
+# http://w3id.org/def/ekaw2018#PowerFactorLowerBound
+<http://w3id.org/def/ekaw2018#PowerFactorLowerBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#PowerFactorLowerBound> <http://www.w3.org/2000/01/rdf-schema#label> "Power factor lower bound"@en .
+# 
+# http://w3id.org/def/ekaw2018#ReactivePowerAbsorbedFromGrid
+<http://w3id.org/def/ekaw2018#ReactivePowerAbsorbedFromGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ReactivePowerAbsorbedFromGrid> <http://www.w3.org/2000/01/rdf-schema#label> "Reactive power absorbed from grid"@en .
+# 
+# http://w3id.org/def/ekaw2018#ReactivePowerInjectedToGrid
+<http://w3id.org/def/ekaw2018#ReactivePowerInjectedToGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ReactivePowerInjectedToGrid> <http://www.w3.org/2000/01/rdf-schema#label> "Reactive power injected to grid"@en .
+# 
+# http://w3id.org/def/ekaw2018#ReactivePowerProduction
+<http://w3id.org/def/ekaw2018#ReactivePowerProduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ReactivePowerProduction> <http://www.w3.org/2000/01/rdf-schema#label> "Reactive power production"@en .
+# 
+# http://w3id.org/def/ekaw2018#ReactivePowerSetPoint
+<http://w3id.org/def/ekaw2018#ReactivePowerSetPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ReactivePowerSetPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Reactive power set point"@en .
+# 
+# http://w3id.org/def/ekaw2018#RefrigeratorDoorStatus
+<http://w3id.org/def/ekaw2018#RefrigeratorDoorStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#RefrigeratorLightStatus
+<http://w3id.org/def/ekaw2018#RefrigeratorLightStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#RefrigeratorTemperature
+<http://w3id.org/def/ekaw2018#RefrigeratorTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#RelativeHumidity
+<http://w3id.org/def/ekaw2018#RelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#RelativeHumidity> <http://www.w3.org/2000/01/rdf-schema#label> "Relative humidity"@en .
+# 
+# http://w3id.org/def/ekaw2018#SimultaneousCharging
+<http://w3id.org/def/ekaw2018#SimultaneousCharging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#SimultaneousCharging> <http://www.w3.org/2000/01/rdf-schema#label> "Simultaneous charging"@en .
+# 
+# http://w3id.org/def/ekaw2018#Sleep
+<http://w3id.org/def/ekaw2018#Sleep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#Sleep> <http://www.w3.org/2000/01/rdf-schema#label> "Sleep"@en .
+# 
+# http://w3id.org/def/ekaw2018#Start
+<http://w3id.org/def/ekaw2018#Start> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#Steps
+<http://w3id.org/def/ekaw2018#Steps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#Steps> <http://www.w3.org/2000/01/rdf-schema#label> "Steps"@en .
+# 
+# http://w3id.org/def/ekaw2018#Stop
+<http://w3id.org/def/ekaw2018#Stop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#StoredEnergy
+<http://w3id.org/def/ekaw2018#StoredEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#StoredEnergy> <http://www.w3.org/2000/01/rdf-schema#label> "Stored energy"@en .
+<http://w3id.org/def/ekaw2018#StoredEnergy> <http://www.w3.org/2000/01/rdf-schema#label> "Nominal EV current" .
+# 
+# http://w3id.org/def/ekaw2018#SuperCool
+<http://w3id.org/def/ekaw2018#SuperCool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/def/ekaw2018#SystolicBloodPressure
+<http://w3id.org/def/ekaw2018#SystolicBloodPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#SystolicBloodPressure> <http://www.w3.org/2000/01/rdf-schema#label> "Systolic blood pressure"@en .
+# 
+# http://w3id.org/def/ekaw2018#UpperStateOfChargeBoundary
+<http://w3id.org/def/ekaw2018#UpperStateOfChargeBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#UpperStateOfChargeBoundary> <http://www.w3.org/2000/01/rdf-schema#label> "Upper state of charge boundary"@en .
+# 
+# http://w3id.org/def/ekaw2018#ValvePosition
+<http://w3id.org/def/ekaw2018#ValvePosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#ValvePosition> <http://www.w3.org/2000/01/rdf-schema#label> "Valve position"@en .
+# 
+# http://w3id.org/def/ekaw2018#Weight
+<http://w3id.org/def/ekaw2018#Weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/ekaw2018#Weight> <http://www.w3.org/2000/01/rdf-schema#label> "Weight"@en .
+# 
+_:genid1 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
