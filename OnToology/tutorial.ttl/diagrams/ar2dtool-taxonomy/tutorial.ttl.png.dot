@@ -1,0 +1,45 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "example:PowerMeter" "example:PhotovoltaicPanel" "example:Thermometer" "example:SmartOven" "example:NoiseSensor" "example:LightSwitch" "example:Charger" "example:ElectricVehicle" "example:HumiditySensor" "example:PeopleCounter" "example:WaterEnergyMeter" "sosa:Actuator" "example:WaterFlowMeter" "example:DoorSensor" "example:MotionSensor" "example:CO2Sensor" "example:EVCharger" "example:HVACSensor" "example:Device" "example:PressureMat" "example:Actuator" "example:OccupancySensor" "example:Thermostat" "sosa:Sensor" "example:WeightScale" "example:Lightbulb" "example:BatteryStorageUnit" "example:BeaconReader" "example:BloodPressureMonitor" "example:PanicButton" "example:ActivityTracker" "example:Sensor" "example:WindowSensor" "example:SmartRefrigerator" "example:Battery" "example:LuminanceMeter" "example:IndoorClimateQualitySensor" "example:EBikeCharger" ; /*classes style*/
+	"example:PhotovoltaicPanel" -> "example:Device" [ label = "rdfs:subClassOf" ];
+	"example:PeopleCounter" -> "example:Sensor" [ label = "rdfs:subClassOf" ];
+	"example:WaterEnergyMeter" -> "example:Sensor" [ label = "rdfs:subClassOf" ];
+	"example:Lightbulb" -> "example:Device" [ label = "rdfs:subClassOf" ];
+	"example:WaterFlowMeter" -> "example:Sensor" [ label = "rdfs:subClassOf" ];
+	"example:HVACSensor" -> "example:Sensor" [ label = "rdfs:subClassOf" ];
+	"example:HVACSensor" -> "example:Actuator" [ label = "rdfs:subClassOf" ];
+	"example:PanicButton" -> "example:Device" [ label = "rdfs:subClassOf" ];
+	"example:SmartRefrigerator" -> "example:Device" [ label = "rdfs:subClassOf" ];
+	"example:Sensor" -> "sosa:Sensor" [ label = "rdfs:subClassOf" ];
+	"example:Sensor" -> "example:Device" [ label = "rdfs:subClassOf" ];
+	"example:DoorSensor" -> "example:Sensor" [ label = "rdfs:subClassOf" ];
+	"example:ActivityTracker" -> "example:Sensor" [ label = "rdfs:subClassOf" ];
+	"example:Charger" -> "example:Device" [ label = "rdfs:subClassOf" ];
+	"example:LuminanceMeter" -> "example:Sensor" [ label = "rdfs:subClassOf" ];
+	"example:ElectricVehicle" -> "example:Device" [ label = "rdfs:subClassOf" ];
+	"example:WindowSensor" -> "example:Sensor" [ label = "rdfs:subClassOf" ];
+	"example:PressureMat" -> "example:Sensor" [ label = "rdfs:subClassOf" ];
+	"example:EVCharger" -> "example:Charger" [ label = "rdfs:subClassOf" ];
+	"example:OccupancySensor" -> "example:Sensor" [ label = "rdfs:subClassOf" ];
+	"example:LightSwitch" -> "example:Actuator" [ label = "rdfs:subClassOf" ];
+	"example:SmartOven" -> "example:Device" [ label = "rdfs:subClassOf" ];
+	"example:BeaconReader" -> "example:Device" [ label = "rdfs:subClassOf" ];
+	"example:CO2Sensor" -> "example:Sensor" [ label = "rdfs:subClassOf" ];
+	"example:Battery" -> "example:Device" [ label = "rdfs:subClassOf" ];
+	"example:EBikeCharger" -> "example:Charger" [ label = "rdfs:subClassOf" ];
+	"example:NoiseSensor" -> "example:Sensor" [ label = "rdfs:subClassOf" ];
+	"example:PowerMeter" -> "example:Sensor" [ label = "rdfs:subClassOf" ];
+	"example:Thermostat" -> "example:Sensor" [ label = "rdfs:subClassOf" ];
+	"example:Thermostat" -> "example:Actuator" [ label = "rdfs:subClassOf" ];
+	"example:HumiditySensor" -> "example:Sensor" [ label = "rdfs:subClassOf" ];
+	"example:IndoorClimateQualitySensor" -> "example:Sensor" [ label = "rdfs:subClassOf" ];
+	"example:BloodPressureMonitor" -> "example:Sensor" [ label = "rdfs:subClassOf" ];
+	"example:Actuator" -> "sosa:Actuator" [ label = "rdfs:subClassOf" ];
+	"example:Actuator" -> "example:Device" [ label = "rdfs:subClassOf" ];
+	"example:BatteryStorageUnit" -> "example:Device" [ label = "rdfs:subClassOf" ];
+	"example:WeightScale" -> "example:Sensor" [ label = "rdfs:subClassOf" ];
+	"example:Thermometer" -> "example:Sensor" [ label = "rdfs:subClassOf" ];
+	"example:MotionSensor" -> "example:Sensor" [ label = "rdfs:subClassOf" ];
+
+}

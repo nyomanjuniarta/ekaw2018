@@ -1,0 +1,1626 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/def/ekaw2018#"
+     xml:base="http://w3id.org/def/ekaw2018"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="http://w3id.org/def/ekaw2018#">
+        <owl:imports rdf:resource="http://iot.linkeddata.es/def/core#"/>
+        <dc:publisher rdf:resource="http://www.oeg-upm.net/"/>
+        <dc:title xml:lang="en">EKAW2018 tutorial example</dc:title>
+        <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <vann:preferredNamespacePrefix>example</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://w3id.org/def/ekaw2018</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">This ontology is defined to be used as an example for the EKAW tutorial &quot;Catching up with ontological engineering&quot; in 2018</rdfs:comment>
+        <owl:versionInfo>0.1.4</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#cardinality -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#cardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ActivityTracker -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#ActivityTracker">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Sensor"/>
+        <rdfs:label xml:lang="en">Activity tracker example</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#Actuator -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#Actuator">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Device"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Actuator"/>
+        <rdfs:comment xml:lang="en">An actuator is a device that accepts digital inputs and which acts on (changes) one or more properties of a physical entity on the basis of those inputs. An actuator is a specialization of an IoT device. An actuator acts on a physical entity. (definition taken from ISO/IEC 11404:2007)</rdfs:comment>
+        <rdfs:label xml:lang="en">Actuator</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO/IEC CC 30141. Information technology - Internet of Things Reference architecutre (IoT RA)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#Battery -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#Battery">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Device"/>
+        <rdfs:label xml:lang="en">Battery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#BatteryStorageUnit -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#BatteryStorageUnit">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Device"/>
+        <rdfs:label xml:lang="en">Battery storage unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#BeaconReader -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#BeaconReader">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Device"/>
+        <rdfs:label xml:lang="en">Beacon reader</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#BloodPressureMonitor -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#BloodPressureMonitor">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Sensor"/>
+        <rdfs:label xml:lang="en">Blood pressure monitor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#CO2Sensor -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#CO2Sensor">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Sensor"/>
+        <rdfs:label xml:lang="en">CO2 Sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#Charger -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#Charger">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Device"/>
+        <rdfs:label xml:lang="en">Charger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#Device -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#Device">
+        <rdfs:comment xml:lang="en">An IoT device is a digital entity which bridges between real-world physical entities and the other digital entities of an IoT system. IoT device interacts one or more networks through which interactions are made with other entities. IoT device exposes one or more endpoints by which interactions are made. (definition taken from ISO/IEC 11404:2007)</rdfs:comment>
+        <rdfs:label xml:lang="en">Device</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO/IEC CC 30141. Information technology - Internet of Things Reference architecutre (IoT RA)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#DoorSensor -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#DoorSensor">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Sensor"/>
+        <rdfs:label xml:lang="en">DoorSensor</rdfs:label>
+        <ns:term_status>unstable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#EBikeCharger -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#EBikeCharger">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Charger"/>
+        <rdfs:label xml:lang="en">eBikeCharger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#EVCharger -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#EVCharger">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Charger"/>
+        <rdfs:label xml:lang="en">Electric vehicle charging point</rdfs:label>
+        <rdfs:label>Electric vehicle charger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ElectricVehicle -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#ElectricVehicle">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Device"/>
+        <rdfs:label xml:lang="en">Electric vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#HVACSensor -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#HVACSensor">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Actuator"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Sensor"/>
+        <rdfs:label xml:lang="en">HVAC Sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#HumiditySensor -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#HumiditySensor">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Sensor"/>
+        <rdfs:label xml:lang="en">Humidity sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#IndoorClimateQualitySensor -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#IndoorClimateQualitySensor">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Sensor"/>
+        <rdfs:label xml:lang="en">Indoor climate quality sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#LightSwitch -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#LightSwitch">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Actuator"/>
+        <rdfs:label xml:lang="en">Light switch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#Lightbulb -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#Lightbulb">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Device"/>
+        <rdfs:label xml:lang="en">Lightbulb</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#LuminanceMeter -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#LuminanceMeter">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Sensor"/>
+        <rdfs:label xml:lang="en">Luminance meter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#MotionSensor -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#MotionSensor">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Sensor"/>
+        <rdfs:label xml:lang="en">Motion sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#NoiseSensor -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#NoiseSensor">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Sensor"/>
+        <rdfs:label xml:lang="en">Noise sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#OccupancySensor -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#OccupancySensor">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Sensor"/>
+        <rdfs:label xml:lang="en">Occupancy sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#PanicButton -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#PanicButton">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Device"/>
+        <rdfs:label xml:lang="en">Panic button</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#PeopleCounter -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#PeopleCounter">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Sensor"/>
+        <rdfs:comment xml:lang="en">A people counter is a device that is used to measure the number of people traversing a certain passage or entrance. (Definition taken from https://en.wikipedia.org/wiki/People_counter)</rdfs:comment>
+        <rdfs:label xml:lang="en">People counter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#PhotovoltaicPanel -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#PhotovoltaicPanel">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Device"/>
+        <rdfs:label xml:lang="en">Photovoltaic panel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#PowerMeter -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#PowerMeter">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Sensor"/>
+        <rdfs:label xml:lang="en">Power meter</rdfs:label>
+        <rdfs:label xml:lang="en">Smart meter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#PressureMat -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#PressureMat">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Sensor"/>
+        <rdfs:label xml:lang="en">Pressure mat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#Sensor -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#Sensor">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Device"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdfs:comment xml:lang="en">A sensor is a device that detects and responds to some type of input from the physical environment and outputs digital data that can be transmitted over a network. A sensor is a specialization of an IoT device. A sensor monitors a physical entity. The output digital data may only be distantly related to the input from the physical environment and may be output with a significant time delay, depending on processing of the data within the device, for example, the recognition of the identity of a person from a surveillance camera device. (definition taken from ISO/IEC 11404:2007)</rdfs:comment>
+        <rdfs:label xml:lang="en">Sensor</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO/IEC CC 30141. Information technology - Internet of Things Reference architecutre (IoT RA)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#SmartOven -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#SmartOven">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Device"/>
+        <rdfs:label xml:lang="en">Smart oven</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#SmartRefrigerator -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#SmartRefrigerator">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Device"/>
+        <rdfs:label xml:lang="en">Smart refrigerator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#Thermometer -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#Thermometer">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Sensor"/>
+        <rdfs:label xml:lang="en">Thermometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#Thermostat -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#Thermostat">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Actuator"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Sensor"/>
+        <rdfs:label xml:lang="en">Thermostat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#WaterEnergyMeter -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#WaterEnergyMeter">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Sensor"/>
+        <rdfs:label xml:lang="en">WaterEnergyMeter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#WaterFlowMeter -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#WaterFlowMeter">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Sensor"/>
+        <rdfs:label xml:lang="en">WaterFlowMeter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#WeightScale -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#WeightScale">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Sensor"/>
+        <rdfs:label xml:lang="en">Weight scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#WindowSensor -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ekaw2018#WindowSensor">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/ekaw2018#Sensor"/>
+        <rdfs:label xml:lang="en">WindowSensor</rdfs:label>
+        <ns:term_status>unstable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Actuator -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Actuator"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Sensor -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#AccumulatedEnergyConsumed -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#AccumulatedEnergyConsumed">
+        <rdfs:label xml:lang="en">Accumulated energy consumed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#AccumulatedEnergyInjectedToGrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#AccumulatedEnergyInjectedToGrid">
+        <rdfs:label xml:lang="en">Accumulated energy imported to grid</rdfs:label>
+        <rdfs:label xml:lang="en">Accumulated energy injected to grid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ActivePowerAbsorbedFromGrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ActivePowerAbsorbedFromGrid">
+        <rdfs:label xml:lang="en">Active power absorbed from grid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ActivePowerInjectedToGrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ActivePowerInjectedToGrid">
+        <rdfs:label xml:lang="en">Active power injected to grid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ActivePowerProduction -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ActivePowerProduction">
+        <rdfs:label xml:lang="en">Active power production</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ActivePowerSetPoint -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ActivePowerSetPoint">
+        <rdfs:label xml:lang="en">Active power set point</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ActualActivePowerGeneration -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ActualActivePowerGeneration">
+        <rdfs:label xml:lang="en">Actual active power generation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ActualActivePowerInjectedToGrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ActualActivePowerInjectedToGrid">
+        <rdfs:label xml:lang="en">Actual active power injected to grid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ActualActivePowerLoad -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ActualActivePowerLoad">
+        <rdfs:label xml:lang="en">Actual active power load</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ActualActivePowerProduction -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ActualActivePowerProduction">
+        <rdfs:label xml:lang="en">Actual active power production</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ActualChargingSessionDuration -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ActualChargingSessionDuration">
+        <rdfs:label xml:lang="en">Actual charging session duration</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ActualEnergyConsumedChargingSession -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ActualEnergyConsumedChargingSession">
+        <rdfs:label xml:lang="en">Actual energy consumed charging session</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ActualReactivePowerGeneration -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ActualReactivePowerGeneration">
+        <rdfs:label xml:lang="en">Actual reactive power generation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ActualReactivePowerInjectedToGrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ActualReactivePowerInjectedToGrid">
+        <rdfs:label xml:lang="en">Actual reactive power injected to grid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ActualReactivePowerLoad -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ActualReactivePowerLoad">
+        <rdfs:label xml:lang="en">Actual reactive power load</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ActualReactivePowerProduction -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ActualReactivePowerProduction">
+        <rdfs:label xml:lang="en">Actual reactive power production</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#AlarmTime -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#AlarmTime"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#AmbientTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#AmbientTemperature">
+        <rdfs:label xml:lang="en">Ambient temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#AverageCO2Concentration -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#AverageCO2Concentration">
+        <rdfs:label xml:lang="en">Average CO2 concentration</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#AverageCO2ConcentrationDeviation -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#AverageCO2ConcentrationDeviation">
+        <terms:title xml:lang="en">Average CO2 concentration deviation</terms:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#AverageHumidity -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#AverageHumidity">
+        <rdfs:label xml:lang="en">Average humidity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#AverageHumidityDeviation -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#AverageHumidityDeviation">
+        <rdfs:label xml:lang="en">Average humidity deviation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#AverageLightIntensity -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#AverageLightIntensity">
+        <rdfs:label xml:lang="en">Average light intensity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#AverageMovemenetShare -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#AverageMovemenetShare">
+        <rdfs:label xml:lang="en">Average movemenet share</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#AverageMovementTime -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#AverageMovementTime">
+        <rdfs:label xml:lang="en">Average movement time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#AverageSound -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#AverageSound">
+        <rdfs:label xml:lang="en">Average sound</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#AverageSoundDeviation -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#AverageSoundDeviation">
+        <rdfs:label xml:lang="en">Average sound deviation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#AverageTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#AverageTemperature">
+        <rdfs:label xml:lang="en">Average temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#AverageTemperatureDeviation -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#AverageTemperatureDeviation">
+        <rdfs:label xml:lang="en">Average temperature deviation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#Azimuth -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#Azimuth">
+        <rdfs:label xml:lang="en">Azimuth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#Baking -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#Baking"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#BakingEndTimeHour -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#BakingEndTimeHour"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#BakingEndTimeMinute -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#BakingEndTimeMinute"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#BakingRemainingTime -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#BakingRemainingTime">
+        <rdfs:label xml:lang="en">Bake remaining time</rdfs:label>
+        <rdfs:label xml:lang="en">Baking remaining time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#BakingStartTimeHour -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#BakingStartTimeHour"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#BakingStartTimeMinute -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#BakingStartTimeMinute"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#BakingStep -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#BakingStep">
+        <rdfs:label xml:lang="en">Baking step</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#BakingTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#BakingTemperature"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#BakingTime -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#BakingTime"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#BatteryNominalCapacity -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#BatteryNominalCapacity">
+        <rdfs:label xml:lang="en">Battery nominal capacity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#CO2Concentration -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#CO2Concentration">
+        <rdfs:label xml:lang="en">CO2 concentration</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#CaloriesBurned -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#CaloriesBurned">
+        <rdfs:label xml:lang="en">Calories burned</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ChargeStatus -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ChargeStatus">
+        <rdfs:label xml:lang="en">Charge status</rdfs:label>
+        <rdfs:label xml:lang="en">State of charge</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ChargingStationOperationalStatus -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ChargingStationOperationalStatus">
+        <rdfs:label xml:lang="en">Charging station operational status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ChildLock -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ChildLock"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ConnectorCurrentChargingPower -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ConnectorCurrentChargingPower">
+        <rdfs:label xml:lang="en">Connector current charging power</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ConnectorDesiredMaxPower -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ConnectorDesiredMaxPower">
+        <rdfs:label xml:lang="en">Connector desired maximum power</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ConnectorSmartChargingProfile -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ConnectorSmartChargingProfile">
+        <rdfs:label xml:lang="en">Connector smart charging profile</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ConnectorStatus -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ConnectorStatus">
+        <rdfs:label xml:lang="en">Connector status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#CurrentBakingStepRemainingTime -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#CurrentBakingStepRemainingTime">
+        <rdfs:label xml:lang="en">Current baking step remaining time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#DelayedBaking -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#DelayedBaking"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#DeviceLightStatus -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#DeviceLightStatus">
+        <rdfs:label xml:lang="en">Device light status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#DeviceStatus -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#DeviceStatus">
+        <rdfs:label xml:lang="en">Device status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#DeviceTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#DeviceTemperature">
+        <rdfs:label xml:lang="en">Device temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#DiastolicBloodPressure -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#DiastolicBloodPressure">
+        <rdfs:label xml:lang="en">Diastolic blood pressure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#DimmingLevel -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#DimmingLevel">
+        <rdfs:label xml:lang="en">Dimming level</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#DistanceWalked -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#DistanceWalked">
+        <rdfs:label xml:lang="en">Distance walked</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ElapsedBakingTime -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ElapsedBakingTime">
+        <rdfs:label xml:lang="en">Bake elapse time</rdfs:label>
+        <rdfs:label xml:lang="en">Elapsed baking time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#Elevation -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#Elevation">
+        <rdfs:label xml:lang="en">Elevation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#EnergySupplySystem -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#EnergySupplySystem">
+        <rdfs:label xml:lang="en">Energy supply system</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#EntryExit -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#EntryExit">
+        <rdfs:label xml:lang="en">Entry exit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#FanSpeed -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#FanSpeed">
+        <rdfs:label xml:lang="en">Fan speed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#FastFreeze -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#FastFreeze"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#FreezerDoorStatus -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#FreezerDoorStatus"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#FreezerLightStatus -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#FreezerLightStatus"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#FreezerTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#FreezerTemperature"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#HeartRate -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#HeartRate">
+        <rdfs:label xml:lang="en">Heart rate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#HeaterDefaultTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#HeaterDefaultTemperature">
+        <rdfs:label xml:lang="en">Heater default temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#HeaterMaxTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#HeaterMaxTemperature">
+        <rdfs:label xml:lang="en">Heater maximum temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#HeaterMeatProbeAllowed -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#HeaterMeatProbeAllowed">
+        <rdfs:label xml:lang="en">Heater meat probe allowed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#HeaterMinTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#HeaterMinTemperature">
+        <rdfs:label xml:lang="en">Heater minimum temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#HeaterPreheatAllowed -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#HeaterPreheatAllowed">
+        <rdfs:label xml:lang="en">Heater preheat allowed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#HeaterSystem -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#HeaterSystem"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#HighestCO2ConcentrationDeviation -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#HighestCO2ConcentrationDeviation">
+        <rdfs:label xml:lang="en">Highest CO2 deviation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#HighestHumidityDeviation -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#HighestHumidityDeviation">
+        <rdfs:label xml:lang="en">Highst humidity deviation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#HighestSoundDeviation -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#HighestSoundDeviation">
+        <rdfs:label xml:lang="en">Highest sound deviation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#HighestTemperatureDeviation -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#HighestTemperatureDeviation">
+        <rdfs:label xml:lang="en">Highst temperature deviation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#IndoorEnvironmentalQualityScore -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#IndoorEnvironmentalQualityScore">
+        <rdfs:label xml:lang="en">IEQ score</rdfs:label>
+        <rdfs:label xml:lang="en">Indoor environmental quality score</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#InverterNominalPower -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#InverterNominalPower">
+        <rdfs:label xml:lang="en">Inverter nominal power</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#LightColor -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#LightColor">
+        <rdfs:label xml:lang="en">Light color</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#Location -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#Location">
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#LowerStateOfChargeBoundary -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#LowerStateOfChargeBoundary">
+        <rdfs:label xml:lang="en">Lower state of charge boundary</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#Luminance -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#Luminance">
+        <rdfs:label xml:lang="en">Luminance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#MaxCO2Concentration -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#MaxCO2Concentration">
+        <rdfs:label xml:lang="en">Maximum CO2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#MaxHumidity -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#MaxHumidity">
+        <rdfs:label xml:lang="en">Maximum humidity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#MaxLightIntensity -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#MaxLightIntensity">
+        <rdfs:label xml:lang="en">Maximum light intensity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#MaxPowerConsumption -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#MaxPowerConsumption">
+        <rdfs:label xml:lang="en">Maximum power consumption</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#MaxSound -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#MaxSound">
+        <rdfs:label xml:lang="en">Maximum sound</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#MaxTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#MaxTemperature">
+        <rdfs:label xml:lang="en">Maximum temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#MaximalCurrentOfChargingCable -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#MaximalCurrentOfChargingCable">
+        <rdfs:label xml:lang="en">Maximal current of charging cable</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#MaximalPowerPerConnector -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#MaximalPowerPerConnector">
+        <rdfs:label xml:lang="en">Maximal power per connector</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#MeanPowerConsumption -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#MeanPowerConsumption">
+        <rdfs:label xml:lang="en">Mean power consumption</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#MeatProbeTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#MeatProbeTemperature">
+        <rdfs:label xml:lang="en">Meat probe temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#MinCO2Concentration -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#MinCO2Concentration">
+        <rdfs:label xml:lang="en">Minimum CO2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#MinHumidity -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#MinHumidity">
+        <rdfs:label xml:lang="en">Minimun humidity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#MinLightIntensity -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#MinLightIntensity">
+        <rdfs:label xml:lang="en">Minimu light intensity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#MinPowerConsumption -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#MinPowerConsumption">
+        <rdfs:label xml:lang="en">Minimum power consumption</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#MinSound -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#MinSound">
+        <rdfs:label xml:lang="en">Minimum sound</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#MinTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#MinTemperature">
+        <rdfs:label xml:lang="en">Minimum temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#Mode -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#Mode">
+        <rdfs:label xml:lang="en">Mode</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#Motion -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#Motion">
+        <rdfs:label xml:lang="en">Motion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#NoiseLevel -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#NoiseLevel">
+        <rdfs:label xml:lang="en">Noise level</rdfs:label>
+        <rdfs:label xml:lang="en">Sound level</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#NominalElectricVehicleCurrent -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#NominalElectricVehicleCurrent">
+        <rdfs:label xml:lang="en">Nominal electric vehicle current</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#NominalProductionCapacity -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#NominalProductionCapacity">
+        <rdfs:label xml:lang="en">Nominal production capacity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#NumberOfConnectors -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#NumberOfConnectors">
+        <rdfs:label xml:lang="en">Number of connectors</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#OnOff -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#OnOff">
+        <rdfs:label xml:lang="en">On Off</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#OpenClosed -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#OpenClosed">
+        <rdfs:label xml:lang="en">Open Closed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#OvenDoorStatus -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#OvenDoorStatus"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#PhotoVoltaicPanelServiceLevel -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#PhotoVoltaicPanelServiceLevel">
+        <rdfs:label xml:lang="en">Photo voltaic panel service level</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#PowerFactorLowerBound -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#PowerFactorLowerBound">
+        <rdfs:label xml:lang="en">Power factor lower bound</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ReactivePowerAbsorbedFromGrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ReactivePowerAbsorbedFromGrid">
+        <rdfs:label xml:lang="en">Reactive power absorbed from grid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ReactivePowerInjectedToGrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ReactivePowerInjectedToGrid">
+        <rdfs:label xml:lang="en">Reactive power injected to grid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ReactivePowerProduction -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ReactivePowerProduction">
+        <rdfs:label xml:lang="en">Reactive power production</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ReactivePowerSetPoint -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ReactivePowerSetPoint">
+        <rdfs:label xml:lang="en">Reactive power set point</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#RefrigeratorDoorStatus -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#RefrigeratorDoorStatus"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#RefrigeratorLightStatus -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#RefrigeratorLightStatus"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#RefrigeratorTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#RefrigeratorTemperature"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#RelativeHumidity -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#RelativeHumidity">
+        <rdfs:label xml:lang="en">Relative humidity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#SimultaneousCharging -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#SimultaneousCharging">
+        <rdfs:label xml:lang="en">Simultaneous charging</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#Sleep -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#Sleep">
+        <rdfs:label xml:lang="en">Sleep</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#Start -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#Start"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#Steps -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#Steps">
+        <rdfs:label xml:lang="en">Steps</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#Stop -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#Stop"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#StoredEnergy -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#StoredEnergy">
+        <rdfs:label xml:lang="en">Stored energy</rdfs:label>
+        <rdfs:label>Nominal EV current</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#SuperCool -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#SuperCool"/>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#SystolicBloodPressure -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#SystolicBloodPressure">
+        <rdfs:label xml:lang="en">Systolic blood pressure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#UpperStateOfChargeBoundary -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#UpperStateOfChargeBoundary">
+        <rdfs:label xml:lang="en">Upper state of charge boundary</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#ValvePosition -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#ValvePosition">
+        <rdfs:label xml:lang="en">Valve position</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/ekaw2018#Weight -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/ekaw2018#Weight">
+        <rdfs:label xml:lang="en">Weight</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/ -->
+
+
